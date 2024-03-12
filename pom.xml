@@ -11,6 +11,7 @@
 	<groupId>com.tlaxcala</groupId>
 	<artifactId>eureka-discovery-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>eureka-discovery-service</name>
 	<description>Eureka Netflix</description>
 	<properties>
@@ -69,5 +70,14 @@
 			</snapshots>
 		</repository>
 	</repositories>
+
+	<build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
